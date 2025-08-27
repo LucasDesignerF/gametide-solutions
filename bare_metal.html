@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Servidores Bare Metal - GameTide Solutions</title>
+    <meta name="description" content="Descubra os servidores bare metal da GameTide Solutions, com alto desempenho e confiabilidade para suas aplicações críticas. Hospedagem dedicada no Brasil e EUA.">
+    <meta name="keywords" content="servidores bare metal Brasil, hospedagem dedicada GameTide, servidores Nocix, servidores dedicados baratos">
+    <meta name="author" content="GameTide Solutions">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gametide.com.br/bare_metal.html">
+    <meta property="og:title" content="Servidores Bare Metal - GameTide Solutions">
+    <meta property="og:description" content="Descubra os servidores bare metal da GameTide Solutions, com alto desempenho e confiabilidade para suas aplicações críticas. Hospedagem dedicada no Brasil e EUA.">
+    <meta property="og:image" content="https://gametide.com.br/images/bare-metal-og.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gametide.com.br/bare_metal.html">
+    <meta property="twitter:title" content="Servidores Bare Metal - GameTide Solutions">
+    <meta property="twitter:description" content="Descubra os servidores bare metal da GameTide Solutions, com alto desempenho e confiabilidade para suas aplicações críticas. Hospedagem dedicada no Brasil e EUA.">
+    <meta property="twitter:image" content="https://gametide.com.br/images/bare-metal-twitter.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://imgur.com/yYatcvB.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': {
+                            DEFAULT: '#8B5CF6',
+                            50: '#F5F3FF',
+                            100: '#EDE9FE',
+                            200: '#DDD6FE',
+                            300: '#C4B5FD',
+                            400: '#A78BFA',
+                            500: '#8B5CF6',
+                            600: '#7C3AED',
+                            700: '#6D28D9',
+                            800: '#5B21B6',
+                            900: '#4C1D95'
+                        },
+                        'secondary': {
+                            DEFAULT: '#0F172A',
+                            50: '#F1F5F9',
+                            100: '#E2E8F0',
+                            200: '#CBD5E1',
+                            300: '#94A3B8',
+                            400: '#64748B',
+                            500: '#475569',
+                            600: '#334155',
+                            700: '#1E293B',
+                            800: '#0F172A',
+                            900: '#020617'
+                        },
+                        'accent': {
+                            DEFAULT: '#06B6D4',
+                            50: '#ECFEFF',
+                            100: '#CFFAFE',
+                            200: '#A5F3FC',
+                            300: '#67E8F9',
+                            400: '#22D3EE',
+                            500: '#06B6D4',
+                            600: '#0891B2',
+                            700: '#0E7490',
+                            800: '#155E75',
+                            900: '#164E63'
+                        },
+                        'background': '#0A0A0A',
+                        'surface': '#161616',
+                        'text-light': '#FAFAFA'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'display': ['Poppins', 'sans-serif']
+                    },
+                    animation: {
+                        'gradient': 'gradient 8s linear infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+                    },
+                    keyframes: {
+                        gradient: {
+                            '0%, 100%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'left center'
+                            },
+                            '50%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'right center'
+                            }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        }
+                    },
+                    screens: {
+                        'xs': '475px',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- BoxIcons CDN -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- AOS for animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #8B5CF6;
+            --primary-dark: #7C3AED;
+            --secondary: #0F172A;
+            --accent: #06B6D4;
+            --background: #0A0A0A;
+            --surface: #161616;
+            --text-light: #FAFAFA;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: var(--background);
+            color: var(--text-light);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #8B5CF6, #06B6D4, #8B5CF6);
+            background-size: 200% auto;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient 8s linear infinite;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(6, 182, 212, 0.2) 100%);
+        }
+        
+        .glass-effect {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .grid-pattern {
+            background-image: 
+                linear-gradient(rgba(15, 23, 42, 0.7) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(15, 23, 42, 0.7) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            opacity: 0.3;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.4);
+        }
+        
+        .btn-outline {
+            border: 2px solid transparent;
+            background: 
+                linear-gradient(var(--background), var(--background)) padding-box,
+                linear-gradient(90deg, var(--primary), var(--accent)) border-box;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.4);
+            background: 
+                linear-gradient(90deg, var(--primary), var(--accent)) padding-box,
+                linear-gradient(90deg, var(--primary), var(--accent)) border-box;
+            color: white;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--secondary);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(var(--primary), var(--accent));
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(var(--primary-dark), var(--accent));
+        }
+        
+        /* Animation delays */
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+        .delay-400 { animation-delay: 400ms; }
+        .delay-500 { animation-delay: 500ms; }
+    </style>
+</head>
+<body class="bg-background text-text-light">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 py-3 px-4 sm:px-6 glass-effect">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex items-center">
+                <img src="https://imgur.com/b12eNRg.png" alt="GameTide Logo" class="h-8 sm:h-10">
+            </a>
+            
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="index.html" class="nav-link text-sm font-medium transition flex items-center">
+                    <i class='bx bx-home-alt-2 mr-1'></i> Home
+                </a>
+                <a href="termos.html" class="nav-link text-sm font-medium transition flex items-center">
+                    <i class='bx bx-file mr-1'></i> Termos e Condições
+                </a>
+                <a href="politica.html" class="nav-link text-sm font-medium transition flex items-center">
+                    <i class='bx bx-shield mr-1'></i> Política de Privacidade
+                </a>
+                <a href="https://discord.gg/w4RhuhrBS2" class="btn-primary text-sm font-medium py-2 px-4 rounded-md flex items-center">
+                    <i class='bx bx-user mr-1'></i> Área do Cliente
+                </a>
+            </div>
+            
+            <button id="mobile-menu-button" class="lg:hidden text-text-light focus:outline-none">
+                <i class="bx bx-menu text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="absolute top-full left-0 right-0 glass-effect shadow-xl hidden lg:hidden px-6 py-4">
+            <div class="flex flex-col space-y-4">
+                <a href="index.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-home-alt-2 mr-2'></i> Home
+                </a>
+                <a href="termos.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-file mr-2'></i> Termos e Condições
+                </a>
+                <a href="politica.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-shield mr-2'></i> Política de Privacidade
+                </a>
+                <a href="https://discord.gg/w4RhuhrBS2" class="btn-primary font-medium py-2 px-4 rounded-md text-center flex items-center justify-center">
+                    <i class='bx bx-user mr-2'></i> Área do Cliente
+                </a>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+    <section class="relative min-h-[100vh] flex items-center justify-center pt-20 px-4 sm:px-6 overflow-hidden">
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 grid-pattern"></div>
+        <div class="absolute inset-0 hero-gradient"></div>
+        
+        <!-- Particles -->
+        <div class="particle w-4 h-4 top-1/4 left-1/4 animation-delay-0"></div>
+        <div class="particle w-6 h-6 top-1/3 right-1/4 animation-delay-200"></div>
+        <div class="particle w-8 h-8 bottom-1/4 left-1/3 animation-delay-400"></div>
+        
+        <div class="container mx-auto text-center relative z-10">
+            <h1 class="text-4xl xs:text-5xl md:text-6xl font-bold mb-6 leading-tight" data-aos="fade-up">
+                Servidores <span class="gradient-text">Bare Metal</span>
+            </h1>
+            <p class="text-lg xs:text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-90" data-aos="fade-up" data-aos-delay="200">
+                Hospedagem dedicada com desempenho incomparável para suas aplicações críticas.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-5 justify-center items-center" data-aos="fade-up" data-aos-delay="400">
+                <a href="#pricing" class="btn-primary text-white font-medium py-3 px-8 rounded-md text-base">
+                    Ver Planos
+                </a>
+                <a href="https://discord.gg/w4RhuhrBS2" class="btn-outline font-medium py-3 px-8 rounded-md text-base flex items-center">
+                    <i class='bx bxl-discord-alt mr-2'></i> Fale Conosco
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 xs:py-20 px-4 sm:px-6 bg-surface">
+        <div class="container mx-auto max-w-5xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl xs:text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">
+                    Planos <span class="gradient-text">Bare Metal</span>
+                </h2>
+                <p class="text-lg max-w-2xl mx-auto opacity-90" data-aos="fade-up" data-aos-delay="200">
+                    Escolha o servidor ideal para suas necessidades, com total controle e desempenho garantido.
+                </p>
+            </div>
+            
+            <div class="glass-effect rounded-2xl p-6 overflow-x-auto" data-aos="fade-up" data-aos-delay="300">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b border-white/10">
+                            <th class="py-4 px-4 font-semibold text-lg">Processador</th>
+                            <th class="py-4 px-4 font-semibold text-lg">RAM</th>
+                            <th class="py-4 px-4 font-semibold text-lg">Armazenamento</th>
+                            <th class="py-4 px-4 font-semibold text-lg">Banda</th>
+                            <th class="py-4 px-4 font-semibold text-lg">IPs</th>
+                            <th class="py-4 px-4 font-semibold text-lg">Preço</th>
+                            <th class="py-4 px-4 font-semibold text-lg">Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-white/10 hover:bg-primary/10 transition">
+                            <td class="py-4 px-4">AMD Ryzen 7 5800H<br>8 Cores/16 Threads @ 4.4 GHz</td>
+                            <td class="py-4 px-4">32GB DDR4</td>
+                            <td class="py-4 px-4">1TB NVMe</td>
+                            <td class="py-4 px-4">1Gbit Ilimitado</td>
+                            <td class="py-4 px-4">5 IPv4</td>
+                            <td class="py-4 px-4">R$336,00/mês</td>
+                            <td class="py-4 px-4">
+                                <a href="https://discord.gg/w4RhuhrBS2" class="btn-primary text-sm font-medium py-2 px-4 rounded-md inline-flex items-center">
+                                    <i class='bx bx-cart mr-2'></i> Contratar
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-white/10 hover:bg-primary/10 transition">
+                            <td class="py-4 px-4">Dual Xeon E5-2683v4<br>32 Cores/64 Threads @ 3.0 GHz</td>
+                            <td class="py-4 px-4">128GB DDR4</td>
+                            <td class="py-4 px-4">2x1TB SSD</td>
+                            <td class="py-4 px-4">1Gbit Ilimitado</td>
+                            <td class="py-4 px-4">5 IPv4</td>
+                            <td class="py-4 px-4">R$646,80/mês</td>
+                            <td class="py-4 px-4">
+                                <a href="https://discord.gg/w4RhuhrBS2" class="btn-primary text-sm font-medium py-2 px-4 rounded-md inline-flex items-center">
+                                    <i class='bx bx-cart mr-2'></i> Contratar
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-white/10 hover:bg-primary/10 transition">
+                            <td class="py-4 px-4">Dual Xeon Gold 6130<br>32 Cores/64 Threads @ 3.0 GHz</td>
+                            <td class="py-4 px-4">128GB DDR4</td>
+                            <td class="py-4 px-4">2TB NVMe</td>
+                            <td class="py-4 px-4">10Gbit Ilimitado</td>
+                            <td class="py-4 px-4">5 IPv4</td>
+                            <td class="py-4 px-4">R$756,00/mês</td>
+                            <td class="py-4 px-4">
+                                <a href="https://discord.gg/w4RhuhrBS2" class="btn-primary text-sm font-medium py-2 px-4 rounded-md inline-flex items-center">
+                                    <i class='bx bx-cart mr-2'></i> Contratar
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-white/10 hover:bg-primary/10 transition">
+                            <td class="py-4 px-4">Dual Xeon E5-2696v3<br>36 Cores/72 Threads @ 3.6 GHz</td>
+                            <td class="py-4 px-4">128GB DDR4</td>
+                            <td class="py-4 px-4">2x2TB SSD</td>
+                            <td class="py-4 px-4">1Gbit Ilimitado</td>
+                            <td class="py-4 px-4">5 IPv4</td>
+                            <td class="py-4 px-4">R$840,00/mês</td>
+                            <td class="py-4 px-4">
+                                <a href="https://discord.gg/w4RhuhrBS2" class="btn-primary text-sm font-medium py-2 px-4 rounded-md inline-flex items-center">
+                                    <i class='bx bx-cart mr-2'></i> Contratar
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-primary/10 transition">
+                            <td class="py-4 px-4">Dual Xeon Plat 8164<br>52 Cores/104 Threads @ 3.8 GHz</td>
+                            <td class="py-4 px-4">256GB DDR4</td>
+                            <td class="py-4 px-4">4TB NVMe</td>
+                            <td class="py-4 px-4">10Gbit Ilimitado</td>
+                            <td class="py-4 px-4">5 IPv4</td>
+                            <td class="py-4 px-4">R$1.680,00/mês</td>
+                            <td class="py-4 px-4">
+                                <a href="https://discord.gg/w4RhuhrBS2" class="btn-primary text-sm font-medium py-2 px-4 rounded-md inline-flex items-center">
+                                    <i class='bx bx-cart mr-2'></i> Contratar
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 xs:py-20 px-4 sm:px-6 relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"></div>
+        
+        <div class="container mx-auto relative z-10 text-center max-w-4xl">
+            <h2 class="text-3xl xs:text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">
+                Pronto para <span class="gradient-text">Desempenho Máximo</span>?
+            </h2>
+            <p class="text-lg xs:text-xl mb-10 opacity-90" data-aos="fade-up" data-aos-delay="200">
+                Entre em contato via Discord para contratar seu servidor bare metal ou esclarecer dúvidas.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-5 justify-center items-center" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://discord.gg/w4RhuhrBS2" class="btn-primary text-white font-medium py-3 px-8 rounded-md text-base flex items-center">
+                    <i class='bx bxl-discord-alt mr-2'></i> Contratar Agora
+                </a>
+                <a href="https://discord.gg/w4RhuhrBS2" class="btn-outline font-medium py-3 px-8 rounded-md text-base flex items-center">
+                    <i class='bx bx-chat mr-2'></i> Fale com o Suporte
+                </a>
+            </div>
+            
+            <p class="mt-8 text-sm opacity-80" data-aos="fade-up" data-aos-delay="600">
+                💬 Abra um ticket no nosso Discord para suporte personalizado!
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary py-16 px-4 sm:px-6">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center md:text-left">
+                    <a href="index.html" class="inline-block mb-5">
+                        <img src="https://imgur.com/b12eNRg.png" alt="GameTide Logo" class="h-8 sm:h-10">
+                    </a>
+                    <p class="opacity-80 mb-6">Transformando ideias em sucesso digital através de tecnologia inovadora e soluções personalizadas.</p>
+                    <div class="flex space-x-4 justify-center md:justify-start">
+                        <a href="#" class="w-9 h-9 rounded-full glass-effect flex items-center justify-center text-accent hover:bg-accent hover:text-white transition">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full glass-effect flex items-center justify-center text-accent hover:bg-accent hover:text-white transition">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full glass-effect flex items-center justify-center text-accent hover:bg-accent hover:text-white transition">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                        <a href="https://discord.gg/w4RhuhrBS2" class="w-9 h-9 rounded-full glass-effect flex items-center justify-center text-accent hover:bg-accent hover:text-white transition">
+                            <i class='bx bxl-discord-alt'></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold mb-5">Empresa</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="opacity-80 hover:text-primary transition">Home</a></li>
+                        <li><a href="termos.html" class="opacity-80 hover:text-primary transition">Termos e Condições</a></li>
+                        <li><a href="politica.html" class="opacity-80 hover:text-primary transition">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold mb-5">Suporte</h4>
+                    <ul class="space-y-3 mb-6">
+                        <li><a href="https://discord.gg/w4RhuhrBS2" class="opacity-80 hover:text-primary transition">Discord</a></li>
+                        <li><a href="https://discord.gg/w4RhuhrBS2" class="opacity-80 hover:text-primary transition">Área do Cliente</a></li>
+                        <li><a href="https://discord.gg/w4RhuhrBS2" class="opacity-80 hover:text-primary transition">Status dos Serviços</a></li>
+                    </ul>
+                    <p class="opacity-80 text-sm">Horário de atendimento:<br>Seg-Sex: 9h-18h | Sáb: 9h-13h</p>
+                </div>
+                
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold mb-5">Recursos</h4>
+                    <ul class="space-y-3">
+                        <li><a href="https://discord.gg/w4RhuhrBS2" class="opacity-80 hover:text-primary transition">Documentação</a></li>
+                        <li><a href="https://discord.gg/w4RhuhrBS2" class="opacity-80 hover:text-primary transition">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 mt-12 pt-8 text-center">
+                <p class="opacity-70">&copy; 2025 GameTide Solutions. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Navbar hide on scroll
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('nav');
+        
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                navbar.classList.add('-translate-y-full');
+            } else {
+                navbar.classList.remove('-translate-y-full');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+
+        // Create floating particles
+        function createParticles() {
+            const container = document.querySelector('section:first-of-type');
+            const particleCount = 8;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Random size between 4 and 10
+                const size = Math.floor(Math.random() * 6) + 4;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                // Random position
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                
+                // Random animation delay
+                particle.style.animationDelay = `${Math.random() * 5}s`;
+                
+                container.appendChild(particle);
+            }
+        }
+        
+        // Initialize particles
+        createParticles();
+    </script>
+</body>
+</html>

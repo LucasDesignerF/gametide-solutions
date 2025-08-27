@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Política de Privacidade - GameTide Solutions</title>
+    <meta name="description" content="Conheça a Política de Privacidade da GameTide Solutions, que garante a proteção de seus dados em serviços de hospedagem, desenvolvimento web e marketing digital no Brasil e EUA.">
+    <meta name="keywords" content="política de privacidade GameTide, proteção de dados hospedagem, privacidade desenvolvimento web, LGPD, CCPA">
+    <meta name="author" content="GameTide Solutions">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gametide.com.br/politica.html">
+    <meta property="og:title" content="Política de Privacidade - GameTide Solutions">
+    <meta property="og:description" content="Conheça a Política de Privacidade da GameTide Solutions, que garante a proteção de seus dados em serviços de hospedagem, desenvolvimento web e marketing digital no Brasil e EUA.">
+    <meta property="og:image" content="https://gametide.com.br/images/politica-og.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gametide.com.br/politica.html">
+    <meta property="twitter:title" content="Política de Privacidade - GameTide Solutions">
+    <meta property="twitter:description" content="Conheça a Política de Privacidade da GameTide Solutions, que garante a proteção de seus dados em serviços de hospedagem, desenvolvimento web e marketing digital no Brasil e EUA.">
+    <meta property="twitter:image" content="https://gametide.com.br/images/politica-twitter.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://imgur.com/yYatcvB.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': {
+                            DEFAULT: '#8B5CF6',
+                            50: '#F5F3FF',
+                            100: '#EDE9FE',
+                            200: '#DDD6FE',
+                            300: '#C4B5FD',
+                            400: '#A78BFA',
+                            500: '#8B5CF6',
+                            600: '#7C3AED',
+                            700: '#6D28D9',
+                            800: '#5B21B6',
+                            900: '#4C1D95'
+                        },
+                        'secondary': {
+                            DEFAULT: '#0F172A',
+                            50: '#F1F5F9',
+                            100: '#E2E8F0',
+                            200: '#CBD5E1',
+                            300: '#94A3B8',
+                            400: '#64748B',
+                            500: '#475569',
+                            600: '#334155',
+                            700: '#1E293B',
+                            800: '#0F172A',
+                            900: '#020617'
+                        },
+                        'accent': {
+                            DEFAULT: '#06B6D4',
+                            50: '#ECFEFF',
+                            100: '#CFFAFE',
+                            200: '#A5F3FC',
+                            300: '#67E8F9',
+                            400: '#22D3EE',
+                            500: '#06B6D4',
+                            600: '#0891B2',
+                            700: '#0E7490',
+                            800: '#155E75',
+                            900: '#164E63'
+                        },
+                        'background': '#0A0A0A',
+                        'surface': '#161616',
+                        'text-light': '#FAFAFA'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'display': ['Poppins', 'sans-serif']
+                    },
+                    animation: {
+                        'gradient': 'gradient 8s linear infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+                    },
+                    keyframes: {
+                        gradient: {
+                            '0%, 100%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'left center'
+                            },
+                            '50%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'right center'
+                            }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        }
+                    },
+                    screens: {
+                        'xs': '475px',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- BoxIcons CDN -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- AOS for animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #8B5CF6;
+            --primary-dark: #7C3AED;
+            --secondary: #0F172A;
+            --accent: #06B6D4;
+            --background: #0A0A0A;
+            --surface: #161616;
+            --text-light: #FAFAFA;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: var(--background);
+            color: var(--text-light);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #8B5CF6, #06B6D4, #8B5CF6);
+            background-size: 200% auto;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient 8s linear infinite;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(6, 182, 212, 0.2) 100%);
+        }
+        
+        .glass-effect {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .grid-pattern {
+            background-image: 
+                linear-gradient(rgba(15, 23, 42, 0.7) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(15, 23, 42, 0.7) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            opacity: 0.3;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.4);
+        }
+        
+        .btn-outline {
+            border: 2px solid transparent;
+            background: 
+                linear-gradient(var(--background), var(--background)) padding-box,
+                linear-gradient(90deg, var(--primary), var(--accent)) border-box;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.4);
+            background: 
+                linear-gradient(90deg, var(--primary), var(--accent)) padding-box,
+                linear-gradient(90deg, var(--primary), var(--accent)) border-box;
+            color: white;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--secondary);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(var(--primary), var(--accent));
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(var(--primary-dark), var(--accent));
+        }
+        
+        /* Animation delays */
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+        .delay-400 { animation-delay: 400ms; }
+        .delay-500 { animation-delay: 500ms; }
+    </style>
+</head>
+<body class="bg-background text-text-light">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 py-3 px-4 sm:px-6 glass-effect">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex items-center">
+                <img src="https://imgur.com/b12eNRg.png" alt="GameTide Logo" class="h-8 sm:h-10">
+            </a>
+            
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="index.html" class="nav-link text-sm font-medium transition flex items-center">
+                    <i class='bx bx-home-alt-2 mr-1'></i> Home
+                </a>
+                <a href="vps_eua.html" class="nav-link text-sm font-medium transition flex items-center">
+                    <i class='bx bx-server mr-1'></i> VPS EUA
+                </a>
+                <a href="vps_br.html" class="nav-link text-sm font-medium transition flex items-center">
+                    <i class='bx bx-server mr-1'></i> VPS Brasil
+                </a>
+                <a href="host_mine.html" class="nav-link text-sm font-medium transition flex items-center">
+                    <i class='bx bx-joystick mr-1'></i> Host Minecraft
+                </a>
+                <a href="host_bot.html" class="nav-link text-sm font-medium transition flex items-center">
+                    <i class='bx bx-bot mr-1'></i> Host Bot
+                </a>
+                <div class="relative group">
+                    <button class="nav-link text-sm font-medium transition flex items-center">
+                        <i class='bx bx-category-alt mr-1'></i> Mais <i class='bx bx-chevron-down ml-1'></i>
+                    </button>
+                    <div class="absolute hidden group-hover:block right-0 mt-2 w-48 glass-effect rounded-md shadow-lg py-2 z-50">
+                        <a href="desenvolvimento.html" class="block px-4 py-2 text-sm hover:bg-primary/10 transition flex items-center">
+                            <i class='bx bx-code-alt mr-2'></i> Desenvolvimento
+                        </a>
+                        <a href="marketing.html" class="block px-4 py-2 text-sm hover:bg-primary/10 transition flex items-center">
+                            <i class='bx bx-line-chart mr-2'></i> Marketing
+                        </a>
+                        <a href="index.html#about" class="block px-4 py-2 text-sm hover:bg-primary/10 transition flex items-center">
+                            <i class='bx bx-info-circle mr-2'></i> Sobre
+                        </a>
+                    </div>
+                </div>
+                <a href="https://discord.gg/w4RhuhrBS2" class="btn-primary text-sm font-medium py-2 px-4 rounded-md flex items-center">
+                    <i class='bx bx-user mr-1'></i> Área do Cliente
+                </a>
+            </div>
+            
+            <button id="mobile-menu-button" class="lg:hidden text-text-light focus:outline-none">
+                <i class="bx bx-menu text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="absolute top-full left-0 right-0 glass-effect shadow-xl hidden lg:hidden px-6 py-4">
+            <div class="flex flex-col space-y-4">
+                <a href="index.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-home-alt-2 mr-2'></i> Home
+                </a>
+                <a href="vps_eua.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-server mr-2'></i> VPS EUA
+                </a>
+                <a href="vps_br.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-server mr-2'></i> VPS Brasil
+                </a>
+                <a href="host_mine.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-joystick mr-2'></i> Host Minecraft
+                </a>
+                <a href="host_bot.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-bot mr-2'></i> Host Bot
+                </a>
+                <a href="desenvolvimento.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-code-alt mr-2'></i> Desenvolvimento
+                </a>
+                <a href="marketing.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-line-chart mr-2'></i> Marketing
+                </a>
+                <a href="index.html#about" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-info-circle mr-2'></i> Sobre
+                </a>
+                <a href="index.html#contact" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-envelope mr-2'></i> Contato
+                </a>
+                <a href="https://discord.gg/w4RhuhrBS2" class="btn-primary font-medium py-2 px-4 rounded-md text-center flex items-center justify-center">
+                    <i class='bx bx-user mr-2'></i> Área do Cliente
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[50vh] flex items-center justify-center pt-20 px-4 sm:px-6 overflow-hidden">
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 grid-pattern"></div>
+        <div class="absolute inset-0 hero-gradient"></div>
+        
+        <!-- Particles -->
+        <div class="particle w-4 h-4 top-1/4 left-1/4 animation-delay-0"></div>
+        <div class="particle w-6 h-6 top-1/3 right-1/4 animation-delay-200"></div>
+        <div class="particle w-8 h-8 bottom-1/4 left-1/3 animation-delay-400"></div>
+        
+        <div class="container mx-auto text-center relative z-10">
+            <h1 class="text-4xl xs:text-5xl md:text-6xl font-bold mb-6 leading-tight" data-aos="fade-up">
+                Política de <span class="gradient-text">Privacidade</span>
+            </h1>
+            <p class="text-lg xs:text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-90" data-aos="fade-up" data-aos-delay="200">
+                Nosso compromisso é proteger seus dados com transparência e segurança em todos os nossos serviços.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-5 justify-center items-center" data-aos="fade-up" data-aos-delay="400">
+                <a href="#politica" class="btn-primary text-white font-medium py-3 px-8 rounded-md text-base">
+                    Ler Política
+                </a>
+                <a href="https://discord.gg/w4RhuhrBS2" class="btn-outline font-medium py-3 px-8 rounded-md text-base flex items-center">
+                    <i class='bx bxl-discord-alt mr-2'></i> Esclarecer Dúvidas
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Policy Section -->
+    <section id="politica" class="py-16 xs:py-20 px-4 sm:px-6 bg-surface">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl xs:text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">
+                    Nossa <span class="gradient-text">Política de Privacidade</span>
+                </h2>
+                <p class="text-lg max-w-2xl mx-auto opacity-90" data-aos="fade-up" data-aos-delay="200">
+                    Última atualização: 25 de agosto de 2025
+                </p>
+            </div>
+            
+            <div class="glass-effect rounded-2xl p-8 space-y-8" data-aos="fade-up" data-aos-delay="300">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">1. Introdução</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        A <strong>GameTide Solutions</strong> valoriza a privacidade de seus clientes e visitantes. Esta Política de Privacidade explica como coletamos, usamos, armazenamos, compartilhamos e protegemos seus dados pessoais ao utilizar nossos serviços de hospedagem (VPS EUA, VPS Brasil, Host Minecraft, Host Bot), desenvolvimento web e marketing digital, com operações no Brasil e Virgínia, EUA. Estamos em conformidade com a <strong>Lei Geral de Proteção de Dados (LGPD)</strong> no Brasil e, quando aplicável, com a <strong>California Consumer Privacy Act (CCPA)</strong> nos EUA.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">2. Dados Coletados</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        Coletamos os seguintes tipos de dados:<br>
+                        - <strong>Dados Pessoais</strong>: Nome, e-mail, telefone, CPF/CNPJ (para clientes no Brasil) e informações de pagamento fornecidas ao contratar nossos serviços.<br>
+                        - <strong>Dados de Uso</strong>: Informações sobre como você interage com nosso site, painel de controle ou serviços, como endereço IP, tipo de navegador, páginas visitadas e tempo de navegação.<br>
+                        - <strong>Dados de Hospedagem</strong>: Arquivos, configurações e conteúdos armazenados em nossos servidores pelos clientes.<br>
+                        - <strong>Dados de Marketing</strong>: Informações fornecidas para campanhas (como logotipos, textos ou preferências de anúncios).<br>
+                        - <strong>Dados de Suporte</strong>: Comunicações realizadas via Discord, incluindo mensagens e tickets de suporte.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">3. Finalidade da Coleta</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        Usamos os dados coletados para:<br>
+                        - Fornecer e gerenciar serviços de hospedagem, desenvolvimento web e marketing digital.<br>
+                        - Processar pagamentos e emitir faturas.<br>
+                        - Oferecer suporte técnico e atendimento ao cliente via Discord.<br>
+                        - Melhorar nossos serviços através de análises de uso e feedback.<br>
+                        - Cumprir obrigações legais, como emissão de notas fiscais no Brasil.<br>
+                        - Enviar comunicações relacionadas aos serviços, como atualizações ou notificações de manutenção.<br>
+                        - Realizar campanhas de marketing contratadas, quando aplicável.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">4. Compartilhamento de Dados</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        4.1. <strong>Com Terceiros</strong>: Podemos compartilhar dados com parceiros necessários para a prestação dos serviços, como:<br>
+                        - Provedores de pagamento (ex.: Stripe, PagSeguro) para processar transações.<br>
+                        - Provedores de infraestrutura (ex.: data centers no Brasil e EUA) para hospedagem.<br>
+                        - Plataformas de marketing (ex.: Google Ads, Meta) para campanhas contratadas.<br>
+                        Todos os terceiros são obrigados a cumprir padrões de privacidade equivalentes aos nossos.<br>
+                        4.2. <strong>Obrigações Legais</strong>: Podemos divulgar dados para cumprir ordens judiciais ou regulamentações aplicáveis.<br>
+                        4.3. <strong>Não Vendemos Dados</strong>: Não vendemos ou alugamos seus dados pessoais a terceiros para fins comerciais.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">5. Armazenamento e Segurança</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        5.1. <strong>Local de Armazenamento</strong>: Dados são armazenados em servidores seguros no Brasil e Virgínia, EUA, com backups regulares.<br>
+                        5.2. <strong>Medidas de Segurança</strong>: Utilizamos criptografia (SSL/TLS), firewalls, autenticação de dois fatores (quando aplicável) e outras medidas para proteger seus dados.<br>
+                        5.3. <strong>Retenção</strong>: Dados pessoais são mantidos pelo tempo necessário para cumprir as finalidades descritas ou até que o Cliente solicite sua exclusão, salvo obrigações legais.<br>
+                        5.4. <strong>Responsabilidade do Cliente</strong>: O Cliente é responsável por manter a segurança de suas credenciais (como senhas do painel ou Discord). Não nos responsabilizamos por violações causadas por negligência do Cliente.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">6. Direitos dos Clientes</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        De acordo com a LGPD e, quando aplicável, a CCPA, você tem os seguintes direitos:<br>
+                        - <strong>Acesso</strong>: Solicitar uma cópia dos dados pessoais que temos sobre você.<br>
+                        - <strong>Correção</strong>: Corrigir dados imprecisos ou incompletos.<br>
+                        - <strong>Exclusão</strong>: Solicitar a exclusão de seus dados, salvo quando houver obrigação legal de retenção.<br>
+                        - <strong>Objeção</strong>: Opor-se ao uso de seus dados para fins de marketing.<br>
+                        - <strong>Portabilidade</strong>: Solicitar a transferência de seus dados para outro provedor, quando tecnicamente viável.<br>
+                        Para exercer esses direitos, entre em contato via <a href="https://discord.gg/w4RhuhrBS2" class="text-primary hover:underline">Discord</a>. Responderemos em até 30 dias, conforme exigido pela LGPD.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">7. Cookies e Tecnologias de Rastreamento</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        7.1. <strong>Cookies Necessários</strong>: Usamos cookies essenciais para o funcionamento do site, como autenticação no painel de controle.<br>
+                        7.2. <strong>Cookies Analíticos</strong>: Utilizamos ferramentas como Google Analytics para analisar o uso do site, mas apenas com dados anonimizados.<br>
+                        7.3. <strong>Consentimento</strong>: Ao acessar nosso site, você consente com o uso de cookies necessários. Cookies analíticos podem ser desativados nas configurações do seu navegador.<br>
+                        7.4. <strong>Marketing</strong>: Para campanhas de marketing contratadas, podemos usar cookies de terceiros (ex.: Google Ads) para rastrear desempenho, com consentimento do Cliente.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">8. Transferências Internacionais</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        Como operamos no Brasil e Virgínia, EUA, seus dados podem ser transferidos entre essas jurisdições. Garantimos que todas as transferências cumprem as exigências da LGPD e, quando aplicável, da CCPA, com medidas de proteção adequadas.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">9. Alterações na Política</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        Podemos atualizar esta Política de Privacidade para refletir mudanças legais ou operacionais. Notificaremos os Clientes com 30 dias de antecedência via e-mail ou Discord. O uso contínuo dos serviços implica aceitação das alterações.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">10. Contato</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        Para dúvidas sobre esta Política de Privacidade ou para exercer seus direitos, entre em contato via <a href="https://discord.gg/w4RhuhrBS2" class="text-primary hover:underline">Discord</a>. Nosso suporte está disponível de segunda a sexta (9h às 18h) e sábado (9h às 13h), horário de Brasília.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 xs:py-20 px-4 sm:px-6 relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"></div>
+        
+        <div class="container mx-auto relative z-10 text-center max-w-4xl">
+            <h2 class="text-3xl xs:text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">
+                Dúvidas sobre <span class="gradient-text">Privacidade</span>?
+            </h2>
+            <p class="text-lg xs:text-xl mb-10 opacity-90" data-aos="fade-up" data-aos-delay="200">
+                Entre em contato para esclarecer quaisquer questões ou exercer seus direitos de proteção de dados.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-5 justify-center items-center" data-aos="fade-up" data-aos-delay="400">
+                <a href="index.html#services" class="btn-primary text-white font-medium py-3 px-8 rounded-md text-base">
+                    Ver Serviços
+                </a>
+                <a href="https://discord.gg/w4RhuhrBS2" class="btn-outline font-medium py-3 px-8 rounded-md text-base flex items-center">
+                    <i class='bx bxl-discord-alt mr-2'></i> Esclarecer Dúvidas
+                </a>
+            </div>
+            
+            <p class="mt-8 text-sm opacity-80" data-aos="fade-up" data-aos-delay="600">
+                💬 Abra um ticket no nosso Discord para suporte personalizado!
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary py-16 px-4 sm:px-6">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center md:text-left">
+                    <a href="index.html" class="inline-block mb-5">
+                        <img src="https://imgur.com/b12eNRg.png" alt="GameTide Logo" class="h-8 sm:h-10">
+                    </a>
+                    <p class="opacity-80 mb-6">Transformando ideias em sucesso digital através de tecnologia inovadora e soluções personalizadas.</p>
+                    <div class="flex space-x-4 justify-center md:justify-start">
+                        <a href="#" class="w-9 h-9 rounded-full glass-effect flex items-center justify-center text-accent hover:bg-accent hover:text-white transition">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full glass-effect flex items-center justify-center text-accent hover:bg-accent hover:text-white transition">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full glass-effect flex items-center justify-center text-accent hover:bg-accent hover:text-white transition">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                        <a href="https://discord.gg/w4RhuhrBS2" class="w-9 h-9 rounded-full glass-effect flex items-center justify-center text-accent hover:bg-accent hover:text-white transition">
+                            <i class='bx bxl-discord-alt'></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold mb-5">Serviços</h4>
+                    <ul class="space-y-3">
+                        <li><a href="vps_eua.html" class="opacity-80 hover:text-primary transition">VPS EUA</a></li>
+                        <li><a href="vps_br.html" class="opacity-80 hover:text-primary transition">VPS Brasil</a></li>
+                        <li><a href="host_mine.html" class="opacity-80 hover:text-primary transition">Host Minecraft</a></li>
+                        <li><a href="host_bot.html" class="opacity-80 hover:text-primary transition">Host Bot</a></li>
+                        <li><a href="desenvolvimento.html" class="opacity-80 hover:text-primary transition">Desenvolvimento Web</a></li>
+                        <li><a href="marketing.html" class="opacity-80 hover:text-primary transition">Marketing Digital</a></li>
+                    </ul>
+                </div>
+                
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold mb-5">Empresa</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="opacity-80 hover:text-primary transition">Home</a></li>
+                        <li><a href="index.html#about" class="opacity-80 hover:text-primary transition">Sobre</a></li>
+                        <li><a href="index.html#services" class="opacity-80 hover:text-primary transition">Serviços</a></li>
+                        <li><a href="index.html#contact" class="opacity-80 hover:text-primary transition">Contato</a></li>
+                        <li><a href="termos.html" class="opacity-80 hover:text-primary transition">Termos e Condições</a></li>
+                        <li><a href="politica.html" class="opacity-80 text-primary transition">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold mb-5">Suporte</h4>
+                    <ul class="space-y-3 mb-6">
+                        <li><a href="https://discord.gg/w4RhuhrBS2" class="opacity-80 hover:text-primary transition">Discord</a></li>
+                        <li><a href="https://discord.gg/w4RhuhrBS2" class="opacity-80 hover:text-primary transition">Área do Cliente</a></li>
+                        <li><a href="https://discord.gg/w4RhuhrBS2" class="opacity-80 hover:text-primary transition">Status dos Serviços</a></li>
+                    </ul>
+                    <p class="opacity-80 text-sm">Horário de atendimento:<br>Seg-Sex: 9h-18h | Sáb: 9h-13h</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 mt-12 pt-8 text-center">
+                <p class="opacity-70">&copy; 2025 GameTide Solutions. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Navbar hide on scroll
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('nav');
+        
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                navbar.classList.add('-translate-y-full');
+            } else {
+                navbar.classList.remove('-translate-y-full');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+
+        // Create floating particles
+        function createParticles() {
+            const container = document.querySelector('section:first-of-type');
+            const particleCount = 8;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Random size between 4 and 10
+                const size = Math.floor(Math.random() * 6) + 4;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                // Random position
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                
+                // Random animation delay
+                particle.style.animationDelay = `${Math.random() * 5}s`;
+                
+                container.appendChild(particle);
+            }
+        }
+        
+        // Initialize particles
+        createParticles();
+    </script>
+</body>
+</html>

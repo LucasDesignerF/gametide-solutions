@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Termos e Condições - GameTide Solutions</title>
+    <meta name="description" content="Leia os Termos e Condições da GameTide Solutions para serviços de hospedagem, desenvolvimento web e marketing digital no Brasil e EUA.">
+    <meta name="keywords" content="termos de serviço GameTide, termos e condições hospedagem, política de uso desenvolvimento web, marketing digital termos">
+    <meta name="author" content="GameTide Solutions">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gametide.com.br/termos.html">
+    <meta property="og:title" content="Termos e Condições - GameTide Solutions">
+    <meta property="og:description" content="Leia os Termos e Condições da GameTide Solutions para serviços de hospedagem, desenvolvimento web e marketing digital no Brasil e EUA.">
+    <meta property="og:image" content="https://gametide.com.br/images/termos-og.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gametide.com.br/termos.html">
+    <meta property="twitter:title" content="Termos e Condições - GameTide Solutions">
+    <meta property="twitter:description" content="Leia os Termos e Condições da GameTide Solutions para serviços de hospedagem, desenvolvimento web e marketing digital no Brasil e EUA.">
+    <meta property="twitter:image" content="https://gametide.com.br/images/termos-twitter.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://imgur.com/yYatcvB.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': {
+                            DEFAULT: '#8B5CF6',
+                            50: '#F5F3FF',
+                            100: '#EDE9FE',
+                            200: '#DDD6FE',
+                            300: '#C4B5FD',
+                            400: '#A78BFA',
+                            500: '#8B5CF6',
+                            600: '#7C3AED',
+                            700: '#6D28D9',
+                            800: '#5B21B6',
+                            900: '#4C1D95'
+                        },
+                        'secondary': {
+                            DEFAULT: '#0F172A',
+                            50: '#F1F5F9',
+                            100: '#E2E8F0',
+                            200: '#CBD5E1',
+                            300: '#94A3B8',
+                            400: '#64748B',
+                            500: '#475569',
+                            600: '#334155',
+                            700: '#1E293B',
+                            800: '#0F172A',
+                            900: '#020617'
+                        },
+                        'accent': {
+                            DEFAULT: '#06B6D4',
+                            50: '#ECFEFF',
+                            100: '#CFFAFE',
+                            200: '#A5F3FC',
+                            300: '#67E8F9',
+                            400: '#22D3EE',
+                            500: '#06B6D4',
+                            600: '#0891B2',
+                            700: '#0E7490',
+                            800: '#155E75',
+                            900: '#164E63'
+                        },
+                        'background': '#0A0A0A',
+                        'surface': '#161616',
+                        'text-light': '#FAFAFA'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'display': ['Poppins', 'sans-serif']
+                    },
+                    animation: {
+                        'gradient': 'gradient 8s linear infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+                    },
+                    keyframes: {
+                        gradient: {
+                            '0%, 100%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'left center'
+                            },
+                            '50%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'right center'
+                            }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        }
+                    },
+                    screens: {
+                        'xs': '475px',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- BoxIcons CDN -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- AOS for animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #8B5CF6;
+            --primary-dark: #7C3AED;
+            --secondary: #0F172A;
+            --accent: #06B6D4;
+            --background: #0A0A0A;
+            --surface: #161616;
+            --text-light: #FAFAFA;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: var(--background);
+            color: var(--text-light);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #8B5CF6, #06B6D4, #8B5CF6);
+            background-size: 200% auto;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient 8s linear infinite;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(6, 182, 212, 0.2) 100%);
+        }
+        
+        .glass-effect {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .grid-pattern {
+            background-image: 
+                linear-gradient(rgba(15, 23, 42, 0.7) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(15, 23, 42, 0.7) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            opacity: 0.3;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.4);
+        }
+        
+        .btn-outline {
+            border: 2px solid transparent;
+            background: 
+                linear-gradient(var(--background), var(--background)) padding-box,
+                linear-gradient(90deg, var(--primary), var(--accent)) border-box;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.4);
+            background: 
+                linear-gradient(90deg, var(--primary), var(--accent)) padding-box,
+                linear-gradient(90deg, var(--primary), var(--accent)) border-box;
+            color: white;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--secondary);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(var(--primary), var(--accent));
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(var(--primary-dark), var(--accent));
+        }
+        
+        /* Animation delays */
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+        .delay-400 { animation-delay: 400ms; }
+        .delay-500 { animation-delay: 500ms; }
+    </style>
+</head>
+<body class="bg-background text-text-light">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 py-3 px-4 sm:px-6 glass-effect">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex items-center">
+                <img src="https://imgur.com/b12eNRg.png" alt="GameTide Logo" class="h-8 sm:h-10">
+            </a>
+            
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="index.html" class="nav-link text-sm font-medium transition flex items-center">
+                    <i class='bx bx-home-alt-2 mr-1'></i> Home
+                </a>
+                <a href="vps_eua.html" class="nav-link text-sm font-medium transition flex items-center">
+                    <i class='bx bx-server mr-1'></i> VPS EUA
+                </a>
+                <a href="vps_br.html" class="nav-link text-sm font-medium transition flex items-center">
+                    <i class='bx bx-server mr-1'></i> VPS Brasil
+                </a>
+                <a href="host_mine.html" class="nav-link text-sm font-medium transition flex items-center">
+                    <i class='bx bx-joystick mr-1'></i> Host Minecraft
+                </a>
+                <a href="host_bot.html" class="nav-link text-sm font-medium transition flex items-center">
+                    <i class='bx bx-bot mr-1'></i> Host Bot
+                </a>
+                <div class="relative group">
+                    <button class="nav-link text-sm font-medium transition flex items-center">
+                        <i class='bx bx-category-alt mr-1'></i> Mais <i class='bx bx-chevron-down ml-1'></i>
+                    </button>
+                    <div class="absolute hidden group-hover:block right-0 mt-2 w-48 glass-effect rounded-md shadow-lg py-2 z-50">
+                        <a href="desenvolvimento.html" class="block px-4 py-2 text-sm hover:bg-primary/10 transition flex items-center">
+                            <i class='bx bx-code-alt mr-2'></i> Desenvolvimento
+                        </a>
+                        <a href="marketing.html" class="block px-4 py-2 text-sm hover:bg-primary/10 transition flex items-center">
+                            <i class='bx bx-line-chart mr-2'></i> Marketing
+                        </a>
+                        <a href="index.html#about" class="block px-4 py-2 text-sm hover:bg-primary/10 transition flex items-center">
+                            <i class='bx bx-info-circle mr-2'></i> Sobre
+                        </a>
+                    </div>
+                </div>
+                <a href="https://discord.gg/w4RhuhrBS2" class="btn-primary text-sm font-medium py-2 px-4 rounded-md flex items-center">
+                    <i class='bx bx-user mr-1'></i> Área do Cliente
+                </a>
+            </div>
+            
+            <button id="mobile-menu-button" class="lg:hidden text-text-light focus:outline-none">
+                <i class="bx bx-menu text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="absolute top-full left-0 right-0 glass-effect shadow-xl hidden lg:hidden px-6 py-4">
+            <div class="flex flex-col space-y-4">
+                <a href="index.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-home-alt-2 mr-2'></i> Home
+                </a>
+                <a href="vps_eua.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-server mr-2'></i> VPS EUA
+                </a>
+                <a href="vps_br.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-server mr-2'></i> VPS Brasil
+                </a>
+                <a href="host_mine.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-joystick mr-2'></i> Host Minecraft
+                </a>
+                <a href="host_bot.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-bot mr-2'></i> Host Bot
+                </a>
+                <a href="desenvolvimento.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-code-alt mr-2'></i> Desenvolvimento
+                </a>
+                <a href="marketing.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-line-chart mr-2'></i> Marketing
+                </a>
+                <a href="index.html#about" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-info-circle mr-2'></i> Sobre
+                </a>
+                <a href="index.html#contact" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-envelope mr-2'></i> Contato
+                </a>
+                <a href="https://discord.gg/w4RhuhrBS2" class="btn-primary font-medium py-2 px-4 rounded-md text-center flex items-center justify-center">
+                    <i class='bx bx-user mr-2'></i> Área do Cliente
+                </a>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+    <section class="relative min-h-[100vh] flex items-center justify-center pt-20 px-4 sm:px-6 overflow-hidden">
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 grid-pattern"></div>
+        <div class="absolute inset-0 hero-gradient"></div>
+        
+        <!-- Particles -->
+        <div class="particle w-4 h-4 top-1/4 left-1/4 animation-delay-0"></div>
+        <div class="particle w-6 h-6 top-1/3 right-1/4 animation-delay-200"></div>
+        <div class="particle w-8 h-8 bottom-1/4 left-1/3 animation-delay-400"></div>
+        
+        <div class="container mx-auto text-center relative z-10">
+            <h1 class="text-4xl xs:text-5xl md:text-6xl font-bold mb-6 leading-tight" data-aos="fade-up">
+                Termos e <span class="gradient-text">Condições</span>
+            </h1>
+            <p class="text-lg xs:text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-90" data-aos="fade-up" data-aos-delay="200">
+                Conheça as regras e responsabilidades que regem nossos serviços, garantindo transparência e proteção para você e a GameTide Solutions.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-5 justify-center items-center" data-aos="fade-up" data-aos-delay="400">
+                <a href="#termos" class="btn-primary text-white font-medium py-3 px-8 rounded-md text-base">
+                    Ler Termos
+                </a>
+                <a href="https://discord.gg/w4RhuhrBS2" class="btn-outline font-medium py-3 px-8 rounded-md text-base flex items-center">
+                    <i class='bx bxl-discord-alt mr-2'></i> Esclarecer Dúvidas
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms Section -->
+    <section id="termos" class="py-16 xs:py-20 px-4 sm:px-6 bg-surface">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl xs:text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">
+                    Nossos <span class="gradient-text">Termos e Condições</span>
+                </h2>
+                <p class="text-lg max-w-2xl mx-auto opacity-90" data-aos="fade-up" data-aos-delay="200">
+                    Última atualização: 25 de agosto de 2025
+                </p>
+            </div>
+            
+            <div class="glass-effect rounded-2xl p-8 space-y-8" data-aos="fade-up" data-aos-delay="300">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">1. Introdução</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        Bem-vindo aos Termos e Condições da <strong>GameTide Solutions</strong>. Este documento regula o uso dos nossos serviços, incluindo hospedagem de servidores (VPS EUA, VPS Brasil, Host Minecraft, Host Bot), desenvolvimento web e marketing digital. Ao contratar nossos serviços, você ("Cliente") concorda em cumprir estes termos. Nosso objetivo é garantir uma relação transparente, justa e segura para ambas as partes, com operações no Brasil e Virgínia, EUA.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">2. Definições</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        - <strong>GameTide Solutions</strong>: Empresa que fornece os serviços descritos, registrada no Brasil e com operações em Virgínia, EUA.<br>
+                        - <strong>Cliente</strong>: Pessoa física ou jurídica que contrata nossos serviços.<br>
+                        - <strong>Serviços</strong>: Incluem hospedagem de servidores (VPS, servidores de jogos, bots), desenvolvimento de sites, aplicações web, APIs, e serviços de marketing digital (SEO, anúncios, redes sociais, etc.).<br>
+                        - <strong>Plataforma</strong>: Infraestrutura digital da GameTide, incluindo servidores, painéis de controle e canais de suporte (como Discord).
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">3. Uso dos Serviços</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        3.1. <strong>Uso Aceitável</strong>: O Cliente concorda em usar os serviços apenas para finalidades legais, respeitando as leis do Brasil, dos EUA e quaisquer jurisdições aplicáveis. É proibido:<br>
+                        - Hospedar conteúdo ilegal, como pirataria, malware, ou material protegido por direitos autorais sem permissão.<br>
+                        - Realizar ataques DDoS, tentativas de hacking ou outras atividades que prejudiquem a infraestrutura da GameTide ou de terceiros.<br>
+                        - Sobrecarregar os servidores além dos limites contratados sem autorização.<br>
+                        3.2. <strong>Suspensão</strong>: A GameTide pode suspender ou encerrar serviços, sem reembolso, em caso de violação destes termos, notificando o Cliente com até 24 horas de antecedência, salvo em casos de emergência.<br>
+                        3.3. <strong>Disponibilidade</strong>: Garantimos 99,9% de uptime para serviços de hospedagem, exceto em casos de manutenção programada ou força maior (como desastres naturais ou falhas de terceiros).
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">4. Obrigações do Cliente</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        4.1. <strong>Informações Precisas</strong>: O Cliente deve fornecer informações verdadeiras e atualizadas ao contratar serviços, incluindo dados de contato e pagamento.<br>
+                        4.2. <strong>Segurança</strong>: O Cliente é responsável por manter a segurança de suas credenciais de acesso (como senhas do painel de controle ou Discord).<br>
+                        4.3. <strong>Backups</strong>: Para serviços de hospedagem, o Cliente é responsável por realizar backups regulares de seus dados, salvo quando contratado um serviço específico de backup.<br>
+                        4.4. <strong>Conteúdo</strong>: O Cliente garante que todo conteúdo hospedado ou utilizado em projetos de desenvolvimento/marketing é legal e não infringe direitos de terceiros.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">5. Pagamentos e Faturamento</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        5.1. <strong>Pagamento</strong>: Os serviços são cobrados com base no plano ou orçamento acordado. O pagamento deve ser efetuado antes da ativação ou renovação do serviço.<br>
+                        5.2. <strong>Inadimplência</strong>: Caso o pagamento não seja realizado até a data de vencimento, a GameTide pode suspender o serviço após notificação de 48 horas. Após 7 dias de inadimplência, o serviço pode ser encerrado, com exclusão de dados.<br>
+                        5.3. <strong>Moeda</strong>: Pagamentos no Brasil são em Reais (BRL); nos EUA, em Dólares (USD). Taxas de câmbio ou conversão são de responsabilidade do Cliente.<br>
+                        5.4. <strong>Ajustes de Preço</strong>: A GameTide reserva-se o direito de ajustar preços, notificando o Cliente com 30 dias de antecedência.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">6. Cancelamento e Reembolsos</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        6.1. <strong>Cancelamento pelo Cliente</strong>: O Cliente pode cancelar serviços de hospedagem a qualquer momento via painel de controle ou Discord, com notificação de 7 dias para serviços mensais ou anuais.<br>
+                        6.2. <strong>Cancelamento pela GameTide</strong>: Podemos cancelar serviços por violação destes termos, inadimplência ou descontinuação do serviço, notificando o Cliente com 30 dias de antecedência, salvo em casos de emergência.<br>
+                        6.3. <strong>Reembolsos</strong>: Oferecemos reembolso total nos primeiros 7 dias para serviços de hospedagem, desde que não haja uso indevido. Para serviços de desenvolvimento web e marketing, reembolsos são avaliados caso a caso, com base no progresso do projeto.<br>
+                        6.4. <strong>Sem Reembolso</strong>: Não haverá reembolso para serviços já utilizados, taxas de configuração ou projetos concluídos.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">7. Proteção de Dados</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        7.1. <strong>Conformidade com LGPD e CCPA</strong>: A GameTide cumpre a Lei Geral de Proteção de Dados (LGPD) no Brasil e a California Consumer Privacy Act (CCPA) nos EUA, quando aplicável.<br>
+                        7.2. <strong>Dados do Cliente</strong>: Coletamos apenas os dados necessários para a prestação dos serviços (nome, e-mail, dados de pagamento). Consulte nossa <a href="politica.html" class="text-primary hover:underline">Política de Privacidade</a> para detalhes.<br>
+                        7.3. <strong>Segurança</strong>: Implementamos medidas técnicas e organizacionais para proteger os dados do Cliente, mas não nos responsabilizamos por violações causadas por ações do Cliente (como senhas fracas).<br>
+                        7.4. <strong>Direitos do Cliente</strong>: O Cliente tem direito a acessar, corrigir ou excluir seus dados pessoais, entrando em contato via Discord.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">8. Propriedade Intelectual</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        8.1. <strong>Propriedade da GameTide</strong>: Todo código, design e conteúdo criados pela GameTide (como templates de sites ou campanhas de marketing) pertencem à GameTide até a entrega final e pagamento completo.<br>
+                        8.2. <strong>Propriedade do Cliente</strong>: Após a entrega e pagamento, o Cliente recebe uma licença não exclusiva para usar os produtos entregues (como sites ou campanhas).<br>
+                        8.3. <strong>Conteúdo do Cliente</strong>: O Cliente garante que possui direitos sobre qualquer conteúdo fornecido à GameTide (como logotipos ou textos) e nos isenta de responsabilidade por infrações.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">9. Suporte ao Cliente</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        9.1. <strong>Canais de Suporte</strong>: Oferecemos suporte via Discord, com horário de atendimento de segunda a sexta (9h às 18h) e sábado (9h às 13h), horário de Brasília.<br>
+                        9.2. <strong>Tempo de Resposta</strong>: Comprometemo-nos a responder tickets em até 24 horas úteis.<br>
+                        9.3. <strong>Limitações</strong>: O suporte cobre apenas questões relacionadas aos serviços contratados. Configurações específicas ou personalizações fora do escopo exigem orçamento adicional.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">10. Limitações de Responsabilidade</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        10.1. <strong>Sem Garantias Implícitas</strong>: Os serviços são fornecidos "como estão". Não garantimos resultados específicos (como ranqueamento em SEO ou uptime além de 99,9%).<br>
+                        10.2. <strong>Perdas Indiretas</strong>: A GameTide não se responsabiliza por perdas indiretas, como lucros cessantes ou danos à reputação, causados pelo uso ou falha dos serviços.<br>
+                        10.3. <strong>Limite de Indenização</strong>: Nossa responsabilidade está limitada ao valor pago pelo Cliente nos últimos 12 meses.<br>
+                        10.4. <strong>Força Maior</strong>: Não nos responsabilizamos por falhas causadas por eventos fora de nosso controle, como desastres naturais ou falhas de terceiros.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">11. Resolução de Disputas</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        11.1. <strong>Negociação</strong>: Qualquer disputa será resolvida primeiramente por negociação amigável via Discord.<br>
+                        11.2. <strong>Jurisdição</strong>: Para disputas no Brasil, aplica-se a legislação brasileira, com foro na cidade de São Paulo. Para disputas nos EUA, aplica-se a legislação do estado da Virgínia.<br>
+                        11.3. <strong>Mediação</strong>: Ambas as partes concordam em buscar mediação antes de ações judiciais, salvo em casos de urgência.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">12. Alterações nos Termos</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        A GameTide pode atualizar estes Termos e Condições a qualquer momento, notificando os Clientes com 30 dias de antecedência via e-mail ou Discord. O uso contínuo dos serviços implica aceitação das alterações.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">13. Contato</h3>
+                    <p class="opacity-80 leading-relaxed">
+                        Para dúvidas sobre estes Termos, entre em contato via <a href="https://discord.gg/w4RhuhrBS2" class="text-primary hover:underline">Discord</a>. Nosso suporte está disponível para esclarecer quaisquer questões.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 xs:py-20 px-4 sm:px-6 relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"></div>
+        
+        <div class="container mx-auto relative z-10 text-center max-w-4xl">
+            <h2 class="text-3xl xs:text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">
+                Dúvidas sobre nossos <span class="gradient-text">Termos</span>?
+            </h2>
+            <p class="text-lg xs:text-xl mb-10 opacity-90" data-aos="fade-up" data-aos-delay="200">
+                Entre em contato para esclarecer quaisquer questões ou solicitar mais informações sobre nossos serviços.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-5 justify-center items-center" data-aos="fade-up" data-aos-delay="400">
+                <a href="index.html#services" class="btn-primary text-white font-medium py-3 px-8 rounded-md text-base">
+                    Ver Serviços
+                </a>
+                <a href="https://discord.gg/w4RhuhrBS2" class="btn-outline font-medium py-3 px-8 rounded-md text-base flex items-center">
+                    <i class='bx bxl-discord-alt mr-2'></i> Esclarecer Dúvidas
+                </a>
+            </div>
+            
+            <p class="mt-8 text-sm opacity-80" data-aos="fade-up" data-aos-delay="600">
+                💬 Abra um ticket no nosso Discord para suporte personalizado!
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary py-16 px-4 sm:px-6">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center md:text-left">
+                    <a href="index.html" class="inline-block mb-5">
+                        <img src="https://imgur.com/b12eNRg.png" alt="GameTide Logo" class="h-8 sm:h-10">
+                    </a>
+                    <p class="opacity-80 mb-6">Transformando ideias em sucesso digital através de tecnologia inovadora e soluções personalizadas.</p>
+                    <div class="flex space-x-4 justify-center md:justify-start">
+                        <a href="#" class="w-9 h-9 rounded-full glass-effect flex items-center justify-center text-accent hover:bg-accent hover:text-white transition">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full glass-effect flex items-center justify-center text-accent hover:bg-accent hover:text-white transition">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full glass-effect flex items-center justify-center text-accent hover:bg-accent hover:text-white transition">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                        <a href="https://discord.gg/w4RhuhrBS2" class="w-9 h-9 rounded-full glass-effect flex items-center justify-center text-accent hover:bg-accent hover:text-white transition">
+                            <i class='bx bxl-discord-alt'></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold mb-5">Serviços</h4>
+                    <ul class="space-y-3">
+                        <li><a href="vps_eua.html" class="opacity-80 hover:text-primary transition">VPS EUA</a></li>
+                        <li><a href="vps_br.html" class="opacity-80 hover:text-primary transition">VPS Brasil</a></li>
+                        <li><a href="host_mine.html" class="opacity-80 hover:text-primary transition">Host Minecraft</a></li>
+                        <li><a href="host_bot.html" class="opacity-80 hover:text-primary transition">Host Bot</a></li>
+                        <li><a href="desenvolvimento.html" class="opacity-80 hover:text-primary transition">Desenvolvimento Web</a></li>
+                        <li><a href="marketing.html" class="opacity-80 hover:text-primary transition">Marketing Digital</a></li>
+                    </ul>
+                </div>
+                
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold mb-5">Empresa</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="opacity-80 hover:text-primary transition">Home</a></li>
+                        <li><a href="index.html#about" class="opacity-80 hover:text-primary transition">Sobre</a></li>
+                        <li><a href="index.html#services" class="opacity-80 hover:text-primary transition">Serviços</a></li>
+                        <li><a href="index.html#contact" class="opacity-80 hover:text-primary transition">Contato</a></li>
+                        <li><a href="termos.html" class="opacity-80 text-primary transition">Termos e Condições</a></li>
+                        <li><a href="politica.html" class="opacity-80 hover:text-primary transition">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold mb-5">Suporte</h4>
+                    <ul class="space-y-3 mb-6">
+                        <li><a href="https://discord.gg/w4RhuhrBS2" class="opacity-80 hover:text-primary transition">Discord</a></li>
+                        <li><a href="https://discord.gg/w4RhuhrBS2" class="opacity-80 hover:text-primary transition">Área do Cliente</a></li>
+                        <li><a href="https://discord.gg/w4RhuhrBS2" class="opacity-80 hover:text-primary transition">Status dos Serviços</a></li>
+                    </ul>
+                    <p class="opacity-80 text-sm">Horário de atendimento:<br>Seg-Sex: 9h-18h | Sáb: 9h-13h</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 mt-12 pt-8 text-center">
+                <p class="opacity-70">&copy; 2025 GameTide Solutions. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Navbar hide on scroll
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('nav');
+        
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                navbar.classList.add('-translate-y-full');
+            } else {
+                navbar.classList.remove('-translate-y-full');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+
+        // Create floating particles
+        function createParticles() {
+            const container = document.querySelector('section:first-of-type');
+            const particleCount = 8;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Random size between 4 and 10
+                const size = Math.floor(Math.random() * 6) + 4;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                // Random position
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                
+                // Random animation delay
+                particle.style.animationDelay = `${Math.random() * 5}s`;
+                
+                container.appendChild(particle);
+            }
+        }
+        
+        // Initialize particles
+        createParticles();
+    </script>
+</body>
+</html>

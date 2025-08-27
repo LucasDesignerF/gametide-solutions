@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>GameTide Solutions - Hospedagem e Desenvolvimento de Alta Performance</title>
+    <meta name="description" content="Soluções completas em hospedagem VPS, servidores de jogos, desenvolvimento web e marketing digital. Tecnologia e criatividade para seu sucesso.">
+    <meta name="keywords" content="hospedagem VPS, servidor de minecraft, servidor de bot, desenvolvimento web, marketing digital, game hosting">
+    <meta name="author" content="GameTide Solutions">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gametide.com.br/">
+    <meta property="og:title" content="GameTide Solutions - Hospedagem e Desenvolvimento">
+    <meta property="og:description" content="Soluções completas em hospedagem VPS, servidores de jogos, desenvolvimento web e marketing digital.">
+    <meta property="og:image" content="https://gametide.com.br/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gametide.com.br/">
+    <meta property="twitter:title" content="GameTide Solutions - Hospedagem e Desenvolvimento">
+    <meta property="twitter:description" content="Soluções completas em hospedagem VPS, servidores de jogos, desenvolvimento web e marketing digital.">
+    <meta property="twitter:image" content="https://gametide.com.br/images/twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://imgur.com/yYatcvB.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': {
+                            DEFAULT: '#8B5CF6',
+                            50: '#F5F3FF',
+                            100: '#EDE9FE',
+                            200: '#DDD6FE',
+                            300: '#C4B5FD',
+                            400: '#A78BFA',
+                            500: '#8B5CF6',
+                            600: '#7C3AED',
+                            700: '#6D28D9',
+                            800: '#5B21B6',
+                            900: '#4C1D95'
+                        },
+                        'secondary': {
+                            DEFAULT: '#0F172A',
+                            50: '#F1F5F9',
+                            100: '#E2E8F0',
+                            200: '#CBD5E1',
+                            300: '#94A3B8',
+                            400: '#64748B',
+                            500: '#475569',
+                            600: '#334155',
+                            700: '#1E293B',
+                            800: '#0F172A',
+                            900: '#020617'
+                        },
+                        'accent': {
+                            DEFAULT: '#06B6D4',
+                            50: '#ECFEFF',
+                            100: '#CFFAFE',
+                            200: '#A5F3FC',
+                            300: '#67E8F9',
+                            400: '#22D3EE',
+                            500: '#06B6D4',
+                            600: '#0891B2',
+                            700: '#0E7490',
+                            800: '#155E75',
+                            900: '#164E63'
+                        },
+                        'background': '#0A0A0A',
+                        'surface': '#161616',
+                        'text-light': '#FAFAFA'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'display': ['Poppins', 'sans-serif']
+                    },
+                    animation: {
+                        'gradient': 'gradient 8s linear infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+                    },
+                    keyframes: {
+                        gradient: {
+                            '0%, 100%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'left center'
+                            },
+                            '50%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'right center'
+                            }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        }
+                    },
+                    screens: {
+                        'xs': '475px',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- BoxIcons CDN -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- AOS for animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #8B5CF6;
+            --primary-dark: #7C3AED;
+            --secondary: #0F172A;
+            --accent: #06B6D4;
+            --background: #0A0A0A;
+            --surface: #161616;
+            --text-light: #FAFAFA;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: var(--background);
+            color: var(--text-light);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #8B5CF6, #06B6D4, #8B5CF6);
+            background-size: 200% auto;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient 8s linear infinite;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(6, 182, 212, 0.2) 100%);
+        }
+        
+        .glass-effect {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .service-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        .grid-pattern {
+            background-image: 
+                linear-gradient(rgba(15, 23, 42, 0.7) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(15, 23, 42, 0.7) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            opacity: 0.3;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.4);
+        }
+        
+        .btn-outline {
+            border: 2px solid transparent;
+            background: 
+                linear-gradient(var(--background), var(--background)) padding-box,
+                linear-gradient(90deg, var(--primary), var(--accent)) border-box;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.4);
+            background: 
+                linear-gradient(90deg, var(--primary), var(--accent)) padding-box,
+                linear-gradient(90deg, var(--primary), var(--accent)) border-box;
+            color: white;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--secondary);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(var(--primary), var(--accent));
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(var(--primary-dark), var(--accent));
+        }
+        
+        /* Animation delays */
+        .delay-100 {
+            animation-delay: 100ms;
+        }
+        
+        .delay-200 {
+            animation-delay: 200ms;
+        }
+        
+        .delay-300 {
+            animation-delay: 300ms;
+        }
+        
+        .delay-400 {
+            animation-delay: 400ms;
+        }
+        
+        .delay-500 {
+            animation-delay: 500ms;
+        }
+    </style>
+</head>
+<body class="bg-background text-text-light">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 py-3 px-4 sm:px-6 glass-effect">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex items-center">
+                <img src="https://imgur.com/b12eNRg.png" alt="GameTide Logo" class="h-8 sm:h-10">
+            </a>
+            
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#home" class="nav-link text-sm font-medium transition flex items-center">
+                    <i class='bx bx-home-alt-2 mr-1'></i> Home
+                </a>
+                <a href="vps_eua.html" class="nav-link text-sm font-medium transition flex items-center">
+                    <i class='bx bx-server mr-1'></i> VPS EUA
+                </a>
+                <a href="vps_br.html" class="nav-link text-sm font-medium transition flex items-center">
+                    <i class='bx bx-server mr-1'></i> VPS Brasil
+                </a>
+                <a href="host_mine.html" class="nav-link text-sm font-medium transition flex items-center">
+                    <i class='bx bx-joystick mr-1'></i> Host Minecraft
+                </a>
+                <a href="host_bot.html" class="nav-link text-sm font-medium transition flex items-center">
+                    <i class='bx bx-bot mr-1'></i> Host Bot
+                </a>
+                <div class="relative group">
+                    <button class="nav-link text-sm font-medium transition flex items-center">
+                        <i class='bx bx-category-alt mr-1'></i> Mais <i class='bx bx-chevron-down ml-1'></i>
+                    </button>
+                    <div class="absolute hidden group-hover:block right-0 mt-2 w-48 glass-effect rounded-md shadow-lg py-2 z-50">
+                        <a href="desenvolvimento.html" class="block px-4 py-2 text-sm hover:bg-primary/10 transition flex items-center">
+                            <i class='bx bx-code-alt mr-2'></i> Desenvolvimento
+                        </a>
+                        <a href="marketing.html" class="block px-4 py-2 text-sm hover:bg-primary/10 transition flex items-center">
+                            <i class='bx bx-line-chart mr-2'></i> Marketing
+                        </a>
+                        <a href="#about" class="block px-4 py-2 text-sm hover:bg-primary/10 transition flex items-center">
+                            <i class='bx bx-info-circle mr-2'></i> Sobre
+                        </a>
+                    </div>
+                </div>
+                <a href="#contact" class="btn-primary text-sm font-medium py-2 px-4 rounded-md flex items-center">
+                    <i class='bx bx-user mr-1'></i> Área do Cliente
+                </a>
+            </div>
+            
+            <button id="mobile-menu-button" class="lg:hidden text-text-light focus:outline-none">
+                <i class="bx bx-menu text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="absolute top-full left-0 right-0 glass-effect shadow-xl hidden lg:hidden px-6 py-4">
+            <div class="flex flex-col space-y-4">
+                <a href="#home" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-home-alt-2 mr-2'></i> Home
+                </a>
+                <a href="vps_eua.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-server mr-2'></i> VPS EUA
+                </a>
+                <a href="vps_br.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-server mr-2'></i> VPS Brasil
+                </a>
+                <a href="host_mine.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-joystick mr-2'></i> Host Minecraft
+                </a>
+                <a href="host_bot.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-bot mr-2'></i> Host Bot
+                </a>
+                <a href="desenvolvimento.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-code-alt mr-2'></i> Desenvolvimento
+                </a>
+                <a href="marketing.html" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-line-chart mr-2'></i> Marketing
+                </a>
+                <a href="#about" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-info-circle mr-2'></i> Sobre
+                </a>
+                <a href="#contact" class="py-2 text-base hover:text-primary transition flex items-center">
+                    <i class='bx bx-envelope mr-2'></i> Contato
+                </a>
+                <a href="#contact" class="btn-primary font-medium py-2 px-4 rounded-md text-center flex items-center justify-center">
+                    <i class='bx bx-user mr-2'></i> Área do Cliente
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 px-4 sm:px-6 overflow-hidden">
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 grid-pattern"></div>
+        <div class="absolute inset-0 hero-gradient"></div>
+        
+        <!-- Particles -->
+        <div class="particle w-4 h-4 top-1/4 left-1/4 animation-delay-0"></div>
+        <div class="particle w-6 h-6 top-1/3 right-1/4 animation-delay-200"></div>
+        <div class="particle w-8 h-8 bottom-1/4 left-1/3 animation-delay-400"></div>
+        <div class="particle w-5 h-5 bottom-1/3 right-1/3 animation-delay-600"></div>
+        <div class="particle w-7 h-7 top-1/2 left-1/2 animation-delay-800"></div>
+        
+        <div class="container mx-auto text-center relative z-10">
+            <h1 class="text-4xl xs:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight" data-aos="fade-up">
+                <span class="gradient-text">Reimagine</span> o Futuro Digital
+            </h1>
+            <p class="text-lg xs:text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-90" data-aos="fade-up" data-aos-delay="200">
+                Potencialize sua presença online com soluções de hospedagem de alta performance, desenvolvimento web inovador e estratégias de marketing que transformam seu negócio.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-5 justify-center items-center" data-aos="fade-up" data-aos-delay="400">
+                <a href="#services" class="btn-primary text-white font-medium py-3 px-8 rounded-md text-base">
+                    Explorar Serviços
+                </a>
+                <a href="#contact" class="btn-outline font-medium py-3 px-8 rounded-md text-base flex items-center">
+                    <i class='bx bx-phone-call mr-2'></i> Fale Conosco
+                </a>
+            </div>
+            
+            <!-- Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="600">
+                <div class="glass-effect p-5 rounded-xl">
+                    <div class="text-3xl md:text-4xl font-bold text-primary mb-2">99.9%</div>
+                    <div class="text-sm md:text-base opacity-80">Uptime Garantido</div>
+                </div>
+                <div class="glass-effect p-5 rounded-xl">
+                    <div class="text-3xl md:text-4xl font-bold text-primary mb-2">500+</div>
+                    <div class="text-sm md:text-base opacity-80">Clientes Satisfeitos</div>
+                </div>
+                <div class="glass-effect p-5 rounded-xl">
+                    <div class="text-3xl md:text-4xl font-bold text-primary mb-2">24/7</div>
+                    <div class="text-sm md:text-base opacity-80">Suporte Especializado</div>
+                </div>
+                <div class="glass-effect p-5 rounded-xl">
+                    <div class="text-3xl md:text-4xl font-bold text-primary mb-2">2s</div>
+                    <div class="text-sm md:text-base opacity-80">Tempo de Carregamento</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#services" class="w-10 h-10 rounded-full glass-effect flex items-center justify-center">
+                <i class='bx bx-chevron-down text-xl'></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 xs:py-24 px-4 sm:px-6 relative">
+        <div class="absolute inset-0 bg-secondary opacity-30"></div>
+        <div class="container mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl xs:text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">
+                    Nossas <span class="gradient-text">Soluções</span>
+                </h2>
+                <p class="text-lg xs:text-xl max-w-2xl mx-auto opacity-90" data-aos="fade-up" data-aos-delay="200">
+                    Oferecemos um ecossistema completo de serviços digitais para impulsionar seu negócio
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- VPS Hosting -->
+                <div class="glass-effect rounded-2xl p-6 card-hover" data-aos="fade-up" data-aos-delay="0">
+                    <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
+                        <i class='bx bx-server text-primary text-3xl service-icon'></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Hospedagem VPS</h3>
+                    <p class="opacity-80 mb-5">Servidores virtuais de alto desempenho com datacenters estratégicos no Brasil e EUA para máxima performance e baixa latência.</p>
+                    <div class="flex justify-between items-center">
+                        <a href="vps_eua.html" class="text-primary hover:underline inline-flex items-center font-medium">
+                            Saiba mais <i class='bx bx-right-arrow-alt ml-1'></i>
+                        </a>
+                        <span class="text-xs py-1 px-3 bg-primary/10 text-primary rounded-full">Popular</span>
+                    </div>
+                </div>
+                
+                <!-- Game Hosting -->
+                <div class="glass-effect rounded-2xl p-6 card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
+                        <i class='bx bx-joystick text-primary text-3xl service-icon'></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Hosting de Jogos</h3>
+                    <p class="opacity-80 mb-5">Servidores otimizados para Minecraft e bots de Discord com hardware de última geração e suporte técnico especializado 24/7.</p>
+                    <a href="host_mine.html" class="text-primary hover:underline inline-flex items-center font-medium">
+                        Saiba mais <i class='bx bx-right-arrow-alt ml-1'></i>
+                    </a>
+                </div>
+                
+                <!-- Web Development -->
+                <div class="glass-effect rounded-2xl p-6 card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
+                        <i class='bx bx-code-alt text-primary text-3xl service-icon'></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Desenvolvimento Web</h3>
+                    <p class="opacity-80 mb-5">Criação de sites responsivos, modernos e de alto desempenho com designs exclusivos que destacam sua marca no mercado digital.</p>
+                    <a href="desenvolvimento.html" class="text-primary hover:underline inline-flex items-center font-medium">
+                        Saiba mais <i class='bx bx-right-arrow-alt ml-1'></i>
+                    </a>
+                </div>
+                
+                <!-- Digital Marketing -->
+                <div class="glass-effect rounded-2xl p-6 card-hover" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
+                        <i class='bx bx-line-chart text-primary text-3xl service-icon'></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Marketing Digital</h3>
+                    <p class="opacity-80 mb-5">Estratégias personalizadas de marketing digital que amplificam sua presença online e convertem visitantes em clientes.</p>
+                    <a href="marketing.html" class="text-primary hover:underline inline-flex items-center font-medium">
+                        Saiba mais <i class='bx bx-right-arrow-alt ml-1'></i>
+                    </a>
+                </div>
+                
+                <!-- Support -->
+                <div class="glass-effect rounded-2xl p-6 card-hover" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
+                        <i class='bx bx-support text-primary text-3xl service-icon'></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Suporte Técnico</h3>
+                    <p class="opacity-80 mb-5">Assistência especializada e proativa para garantir a tranquilidade e continuidade dos seus serviços e operações.</p>
+                    <a href="#contact" class="text-primary hover:underline inline-flex items-center font-medium">
+                        Saiba mais <i class='bx bx-right-arrow-alt ml-1'></i>
+                    </a>
+                </div>
+                
+                <!-- Consulting -->
+                <div class="glass-effect rounded-2xl p-6 card-hover" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
+                        <i class='bx bx-bulb text-primary text-3xl service-icon'></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Consultoria</h3>
+                    <p class="opacity-80 mb-5">Soluções personalizadas e consultoria especializada para atender suas necessidades tecnológicas específicas.</p>
+                    <a href="#contact" class="text-primary hover:underline inline-flex items-center font-medium">
+                        Saiba mais <i class='bx bx-right-arrow-alt ml-1'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 xs:py-24 px-4 sm:px-6 bg-surface relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/5 to-transparent opacity-30"></div>
+        
+        <div class="container mx-auto relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl xs:text-4xl md:text-5xl font-bold mb-6">
+                        Por que escolher a <span class="gradient-text">GameTide</span>?
+                    </h2>
+                    <p class="text-lg opacity-90 mb-8">
+                        Combinamos tecnologia de ponta com expertise técnica para oferecer soluções que realmente fazem a diferença para seu negócio.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mr-4">
+                                <i class='bx bx-rocket text-primary'></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Performance Inigualável</h4>
+                                <p class="opacity-80">Hardware de última geração e infraestrutura otimizada para máxima velocidade e estabilidade.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mr-4">
+                                <i class='bx bx-shield-quarter text-primary'></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Segurança Avançada</h4>
+                                <p class="opacity-80">Proteção contra ameaças com firewalls avançados, backups automáticos e monitoramento 24/7.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mr-4">
+                                <i class='bx bx-support text-primary'></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Suporte Humanizado</h4>
+                                <p class="opacity-80">Equipe técnica especializada disponível 24/7 para resolver suas dúvidas e problemas rapidamente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-left" data-aos-delay="200">
+                    <div class="glass-effect rounded-2xl p-2">
+                        <div class="rounded-xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Data Center" class="w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 xs:py-24 px-4 sm:px-6 relative">
+        <div class="absolute inset-0 bg-secondary opacity-20"></div>
+        
+        <div class="container mx-auto relative z-10 text-center">
+            <h2 class="text-3xl xs:text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">
+                Nossa <span class="gradient-text">Jornada</span>
+            </h2>
+            <p class="text-lg max-w-3xl mx-auto opacity-90 mb-12" data-aos="fade-up" data-aos-delay="200">
+                Na GameTide Solutions, unimos paixão por tecnologia com expertise técnica para criar soluções digitais que impulsionam negócios e superam expectativas.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-5">
+                        <i class='bx bx-globe text-primary text-3xl'></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Alcance Global</h3>
+                    <p class="opacity-80">Datacenters estrategicamente localizados no Brasil e EUA para oferecer baixa latência e alta performance wherever you are.</p>
+                </div>
+                
+                <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-5">
+                        <i class='bx bx-rocket text-primary text-3xl'></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Inovação Constante</h3>
+                    <p class="opacity-80">Sempre buscando as melhores tecnologias e metodologias para entregar soluções modernas e preparadas para o futuro.</p>
+                </div>
+                
+                <div class="text-center" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-5">
+                        <i class='bx bx-group text-primary text-3xl'></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Suporte 24/7</h3>
+                    <p class="opacity-80">Equipe dedicada e apaixonada disponível a qualquer hora para garantir seu sucesso e tranquilidade.</p>
+                </div>
+            </div>
+            
+            <div class="mt-16" data-aos="fade-up" data-aos-delay="600">
+                <a href="#contact" class="btn-primary text-white font-medium py-3 px-8 rounded-md text-base inline-flex items-center">
+                    <i class='bx bx-chat mr-2'></i> Fale com nossa equipe
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 xs:py-24 px-4 sm:px-6 bg-surface">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl xs:text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">
+                    O que nossos <span class="gradient-text">clientes</span> dizem
+                </h2>
+                <p class="text-lg max-w-2xl mx-auto opacity-90" data-aos="fade-up" data-aos-delay="200">
+                    A satisfação dos nossos clientes é nossa maior motivação e comprovação do nosso trabalho.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-effect rounded-2xl p-6 card-hover" data-aos="fade-up" data-aos-delay="0">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4">
+                            <i class='bx bx-user text-primary'></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Carlos Silva</h4>
+                            <p class="text-sm opacity-70">CEO - TechSolutions</p>
+                        </div>
+                    </div>
+                    <p class="opacity-90 italic">"A GameTide revolucionou nossa infraestrutura. O uptime de 99.9% é real e o suporte é simplesmente excepcional."</p>
+                    <div class="flex mt-4">
+                        <i class='bx bxs-star text-yellow-400'></i>
+                        <i class='bx bxs-star text-yellow-400'></i>
+                        <i class='bx bxs-star text-yellow-400'></i>
+                        <i class='bx bxs-star text-yellow-400'></i>
+                        <i class='bx bxs-star text-yellow-400'></i>
+                    </div>
+                </div>
+                
+                <div class="glass-effect rounded-2xl p-6 card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4">
+                            <i class='bx bx-user text-primary'></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Amanda Santos</h4>
+                            <p class="text-sm opacity-70">Diretora de Marketing</p>
+                        </div>
+                    </div>
+                    <p class="opacity-90 italic">"Migramos nosso servidor de Minecraft para a GameTide e a diferença foi absurda. Performance incrível e suporte sempre disponível."</p>
+                    <div class="flex mt-4">
+                        <i class='bx bxs-star text-yellow-400'></i>
+                        <i class='bx bxs-star text-yellow-400'></i>
+                        <i class='bx bxs-star text-yellow-400'></i>
+                        <i class='bx bxs-star text-yellow-400'></i>
+                        <i class='bx bxs-star text-yellow-400'></i>
+                    </div>
+                </div>
+                
+                <div class="glass-effect rounded-2xl p-6 card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4">
+                            <i class='bx bx-user text-primary'></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Ricardo Oliveira</h4>
+                            <p class="text-sm opacity-70">Desenvolvedor Full-Stack</p>
+                        </div>
+                    </div>
+                    <p class="opacity-90 italic">"A VPS da GameTide é incrivelmente rápida e estável. Preço justo e performance premium. Recomendo para todos os devs."</p>
+                    <div class="flex mt-4">
+                        <i class='bx bxs-star text-yellow-400'></i>
+                        <i class='bx bxs-star text-yellow-400'></i>
+                        <i class='bx bxs-star text-yellow-400'></i>
+                        <i class='bx bxs-star text-yellow-400'></i>
+                        <i class='bx bxs-star text-yellow-400'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 xs:py-24 px-4 sm:px-6 relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5"></div>
+        
+        <div class="container mx-auto relative z-10 text-center max-w-4xl">
+            <h2 class="text-3xl xs:text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">
+                Pronto para <span class="gradient-text">impulsionar</span> seu negócio?
+            </h2>
+            <p class="text-lg xs:text-xl mb-12 opacity-90" data-aos="fade-up" data-aos-delay="200">
+                Entre em contato conosco e descubra como nossas soluções podem transformar sua presença digital.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left mb-12">
+                <div data-aos="fade-right" data-aos-delay="300">
+                    <div class="glass-effect rounded-2xl p-6">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center">
+                            <i class='bx bxl-discord-alt text-accent mr-2'></i> Discord
+                        </h3>
+                        <p class="mb-4 opacity-90">Junte-se à nossa comunidade no Discord para suporte rápido e interação com outros clientes.</p>
+                        <a href="https://discord.gg/w4RhuhrBS2" class="text-accent hover:underline font-medium">
+                            https://discord.gg/w4RhuhrBS2
+                        </a>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-left" data-aos-delay="400">
+                    <div class="glass-effect rounded-2xl p-6">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center">
+                            <i class='bx bx-time-five text-accent mr-2'></i> Horário de Atendimento
+                        </h3>
+                        <p class="mb-2 opacity-90"><span class="font-medium">Segunda a Sexta:</span> 9h às 18h</p>
+                        <p class="mb-4 opacity-90"><span class="font-medium">Sábado:</span> 9h às 13h</p>
+                        
+                        <div class="flex space-x-3 mt-4">
+                            <a href="#" class="w-10 h-10 rounded-full glass-effect flex items-center justify-center text-accent hover:bg-accent hover:text-white transition">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full glass-effect flex items-center justify-center text-accent hover:bg-accent hover:text-white transition">
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full glass-effect flex items-center justify-center text-accent hover:bg-accent hover:text-white transition">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full glass-effect flex items-center justify-center text-accent hover:bg-accent hover:text-white transition">
+                                <i class='bx bxl-linkedin'></i>
+                            </a>
+                            <a href="https://discord.gg/w4RhuhrBS2" class="w-10 h-10 rounded-full glass-effect flex items-center justify-center text-accent hover:bg-accent hover:text-white transition">
+                                <i class='bx bxl-discord-alt'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div data-aos="fade-up" data-aos-delay="500">
+                <a href="https://discord.gg/w4RhuhrBS2" class="btn-primary text-white font-medium py-3 px-8 rounded-md text-base inline-flex items-center mx-auto">
+                    <i class='bx bxl-discord-alt mr-2'></i> Entrar no Discord
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary py-16 px-4 sm:px-6">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center md:text-left">
+                    <a href="index.html" class="inline-block mb-5">
+                        <img src="https://imgur.com/b12eNRg.png" alt="GameTide Logo" class="h-8 sm:h-10">
+                    </a>
+                    <p class="opacity-80 mb-6">Transformando ideias em sucesso digital através de tecnologia inovadora e soluções personalizadas.</p>
+                    <div class="flex space-x-4 justify-center md:justify-start">
+                        <a href="#" class="w-9 h-9 rounded-full glass-effect flex items-center justify-center text-accent hover:bg-accent hover:text-white transition">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full glass-effect flex items-center justify-center text-accent hover:bg-accent hover:text-white transition">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full glass-effect flex items-center justify-center text-accent hover:bg-accent hover:text-white transition">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                        <a href="https://discord.gg/w4RhuhrBS2" class="w-9 h-9 rounded-full glass-effect flex items-center justify-center text-accent hover:bg-accent hover:text-white transition">
+                            <i class='bx bxl-discord-alt'></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold mb-5">Serviços</h4>
+                    <ul class="space-y-3">
+                        <li><a href="vps_eua.html" class="opacity-80 hover:text-primary transition">VPS EUA</a></li>
+                        <li><a href="vps_br.html" class="opacity-80 hover:text-primary transition">VPS Brasil</a></li>
+                        <li><a href="host_mine.html" class="opacity-80 hover:text-primary transition">Host Minecraft</a></li>
+                        <li><a href="host_bot.html" class="opacity-80 hover:text-primary transition">Host Bot</a></li>
+                        <li><a href="desenvolvimento.html" class="opacity-80 hover:text-primary transition">Desenvolvimento Web</a></li>
+                        <li><a href="marketing.html" class="opacity-80 hover:text-primary transition">Marketing Digital</a></li>
+                    </ul>
+                </div>
+                
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold mb-5">Empresa</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="opacity-80 hover:text-primary transition">Home</a></li>
+                        <li><a href="#about" class="opacity-80 hover:text-primary transition">Sobre</a></li>
+                        <li><a href="#services" class="opacity-80 hover:text-primary transition">Serviços</a></li>
+                        <li><a href="#contact" class="opacity-80 hover:text-primary transition">Contato</a></li>
+                        <li><a href="termos.html" class="opacity-80 hover:text-primary transition">Termos e Condições</a></li>
+                        <li><a href="politica.html" class="opacity-80 hover:text-primary transition">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold mb-5">Newsletter</h4>
+                    <p class="opacity-80 mb-4">Inscreva-se para receber nossas novidades e promoções exclusivas.</p>
+                    <form class="flex flex-col space-y-3">
+                        <input type="email" placeholder="Seu e-mail" class="glass-effect py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                        <button type="submit" class="btn-primary py-2 px-4 rounded-md font-medium">
+                            Inscrever
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 mt-12 pt-8 text-center">
+                <p class="opacity-70">&copy; 2025 GameTide Solutions. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Navbar hide on scroll
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('nav');
+        
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                navbar.classList.add('-translate-y-full');
+            } else {
+                navbar.classList.remove('-translate-y-full');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+
+        // Create floating particles
+        function createParticles() {
+            const container = document.querySelector('#home');
+            const particleCount = 12;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Random size between 4 and 10
+                const size = Math.floor(Math.random() * 6) + 4;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                // Random position
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                
+                // Random animation delay
+                particle.style.animationDelay = `${Math.random() * 5}s`;
+                
+                container.appendChild(particle);
+            }
+        }
+        
+        // Initialize particles
+        createParticles();
+    </script>
+</body>
+</html>
